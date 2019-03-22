@@ -18,13 +18,13 @@ public class S33 {
         log.info(Colours.ANSI_BLUE + "target = \"S33\", getState().getId(): "
                 + stateContext.getStateMachine().getState().getId()
                 + Colours.ANSI_RESET);
-        Sleep.sleep(400);
+        Sleep.sleep(600);
     }
 
     @OnStateChanged(target = "S33")
     public void onStateChanged(StateContext<String, String> stateContext) {
         log.debug(Colours.B_HI_ANSI_GREEN + "S33 EXPECTS_ORDERS stateChanged :: Current state ID :: {}",
                 stateContext.getStateMachine().getState().getId() + Colours.ANSI_RESET);
-        Sleep.sleep(400);
+        Sleep.sleep(600);
     }
 }

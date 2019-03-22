@@ -15,6 +15,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class ForkJointestApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(ForkJointestApplication.class, args);
+		SpringApplication.run(ForkJointestApplication.class, args);
 	}
 }

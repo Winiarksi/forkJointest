@@ -5,6 +5,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import org.springframework.core.task.TaskExecutor;
+import org.springframework.scheduling.TaskScheduler;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
+import org.springframework.statemachine.StateMachineSystemConstants;
 import org.springframework.statemachine.config.EnableStateMachine;
 import org.springframework.statemachine.config.StateMachineConfigurerAdapter;
 import org.springframework.statemachine.config.builders.StateMachineConfigurationConfigurer;
@@ -32,10 +37,19 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<String, St
     }
 
 
-     @Override public void configure(StateMachineConfigurationConfigurer<String, String> config) throws Exception {
-     config
-     .withConfiguration()
-     .listener(new StateMachineListener())
-     .autoStartup(true);
-     }
+    @Override
+    public void configure(StateMachineConfigurationConfigurer<String, String> config) throws Exception {
+        config
+                .withConfiguration()
+                .listener(new StateMachineListener())
+//                .taskExecutor(myAsyncTaskExecutor())
+                .autoStartup(true);
+    }
+
+    @Bean(name = StateMachineSystemConstants.TASK_EXECUTOR_BEAN_NAME)
+    public TaskExecutor myAsyncTaskExecutor() {
+        ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
+        taskExecutor.setCorePoolSize(5);
+        return taskExecutor;
+    }
 }
