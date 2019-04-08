@@ -13,8 +13,7 @@
         <trigger xmi:type="uml:Trigger" xmi:id="_EHpicEl4EemEfNdwFYfAkQ" event="_EBG1kEl4EemEfNdwFYfAkQ"/>
       </transition>
       <transition xmi:type="uml:Transition" xmi:id="_XxDM0ErqEemL-eP6S-y8Qw" source="_jor5wEcnEemEfNdwFYfAkQ" target="_cnOMsEcoEemEfNdwFYfAkQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_ce9tcErqEemL-eP6S-y8Qw" source="_e6YXkEcnEemEfNdwFYfAkQ" target="_mL08oAPIEeaXyaQL1WyV3A"/>
-      <transition xmi:type="uml:Transition" xmi:id="_dsVfgErqEemL-eP6S-y8Qw" source="_e6YXkEcnEemEfNdwFYfAkQ" target="_srPQEAPIEeaXyaQL1WyV3A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_aYCJoFnyEemJQ9EHcFiygg" source="_e6YXkEcnEemEfNdwFYfAkQ" target="_f92XcAPIEeaXyaQL1WyV3A"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_IPSQYAPIEeaXyaQL1WyV3A"/>
       <subvertex xmi:type="uml:State" xmi:id="_IyviwAPIEeaXyaQL1WyV3A" name="SI"/>
       <subvertex xmi:type="uml:State" xmi:id="_f92XcAPIEeaXyaQL1WyV3A" name="S2">
@@ -22,7 +21,7 @@
           <transition xmi:type="uml:Transition" xmi:id="_QNyPsErqEemL-eP6S-y8Qw" source="_mL08oAPIEeaXyaQL1WyV3A" target="_mkFEkAPIEeaXyaQL1WyV3A"/>
           <transition xmi:type="uml:Transition" xmi:id="_QxHmQErqEemL-eP6S-y8Qw" source="_mkFEkAPIEeaXyaQL1WyV3A" target="_EcwwoEckEemEfNdwFYfAkQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_RTvLIErqEemL-eP6S-y8Qw" source="_EcwwoEckEemEfNdwFYfAkQ" target="_Pm9_QEckEemEfNdwFYfAkQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_Ze6c0ErqEemL-eP6S-y8Qw" source="_Pm9_QEckEemEfNdwFYfAkQ" target="_jor5wEcnEemEfNdwFYfAkQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ZcUvUFnyEemJQ9EHcFiygg" source="_Pm9_QEckEemEfNdwFYfAkQ" target="_jor5wEcnEemEfNdwFYfAkQ"/>
           <subvertex xmi:type="uml:State" xmi:id="_mkFEkAPIEeaXyaQL1WyV3A" name="S21"/>
           <subvertex xmi:type="uml:State" xmi:id="_mL08oAPIEeaXyaQL1WyV3A" name="S20"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="___UekEZrEem0Y4lXZkloqw" name="Initial6"/>
@@ -34,7 +33,7 @@
           <transition xmi:type="uml:Transition" xmi:id="_MUaKYErqEemL-eP6S-y8Qw" source="_srPQEAPIEeaXyaQL1WyV3A" target="_tDCFAAPIEeaXyaQL1WyV3A"/>
           <transition xmi:type="uml:Transition" xmi:id="_M-ELYErqEemL-eP6S-y8Qw" source="_tDCFAAPIEeaXyaQL1WyV3A" target="_MNKx4EckEemEfNdwFYfAkQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_NwDB8ErqEemL-eP6S-y8Qw" source="_MNKx4EckEemEfNdwFYfAkQ" target="_UqGh8EckEemEfNdwFYfAkQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_aQdOgErqEemL-eP6S-y8Qw" source="_UqGh8EckEemEfNdwFYfAkQ" target="_jor5wEcnEemEfNdwFYfAkQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_RehyUFnyEemJQ9EHcFiygg" source="_UqGh8EckEemEfNdwFYfAkQ" target="_jor5wEcnEemEfNdwFYfAkQ"/>
           <subvertex xmi:type="uml:State" xmi:id="_tDCFAAPIEeaXyaQL1WyV3A" name="S31"/>
           <subvertex xmi:type="uml:State" xmi:id="_srPQEAPIEeaXyaQL1WyV3A" name="S30"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_AsbcMEZsEem0Y4lXZkloqw" name="Initial7"/>
@@ -57,4 +56,6 @@
   <packagedElement xmi:type="uml:SignalEvent" xmi:id="_cXbUoEmCEemEfNdwFYfAkQ" name="E30" signal="_b4rjIEmCEemEfNdwFYfAkQ"/>
   <packagedElement xmi:type="uml:Signal" xmi:id="_gXURoEmCEemEfNdwFYfAkQ" name="E1"/>
   <packagedElement xmi:type="uml:SignalEvent" xmi:id="_giuQYEmCEemEfNdwFYfAkQ" name="E1" signal="_gXURoEmCEemEfNdwFYfAkQ"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_NRPH8FnxEemJQ9EHcFiygg" name="A1"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_N5R_YFnxEemJQ9EHcFiygg" name="A1" signal="_NRPH8FnxEemJQ9EHcFiygg"/>
 </uml:Model>

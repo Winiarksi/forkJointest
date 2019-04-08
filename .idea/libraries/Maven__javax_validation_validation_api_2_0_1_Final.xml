@@ -6,7 +6,6 @@
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-javadoc.jar!/" />
     </JAVADOC>
-    <LIBRARY_FILE />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-sources.jar!/" />
     </SOURCES>

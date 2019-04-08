@@ -6,9 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.task.TaskExecutor;
-import org.springframework.scheduling.TaskScheduler;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.statemachine.StateMachineSystemConstants;
 import org.springframework.statemachine.config.EnableStateMachine;
 import org.springframework.statemachine.config.StateMachineConfigurerAdapter;
@@ -22,7 +20,6 @@ import org.springframework.statemachine.uml.UmlStateMachineModelFactory;
 @EnableStateMachine
 public class StateMachineConfig extends StateMachineConfigurerAdapter<String, String> {
 
-
     @Override
     public void configure(StateMachineModelConfigurer<String, String> model) throws Exception {
         model
@@ -32,7 +29,7 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<String, St
 
     @Bean
     public StateMachineModelFactory<String, String> modelFactory() {
-        Resource model = new ClassPathResource("/uml/simple-forkjoin.uml");
+        Resource model = new ClassPathResource("/UMLsimple-forkjoin/simple-forkjoin.uml");
         return new UmlStateMachineModelFactory(model);
     }
 
@@ -42,14 +39,14 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<String, St
         config
                 .withConfiguration()
                 .listener(new StateMachineListener())
-//                .taskExecutor(myAsyncTaskExecutor())
-                .autoStartup(true);
+                .taskExecutor(myAsyncTaskExecutor())
+                .autoStartup(false);
     }
 
     @Bean(name = StateMachineSystemConstants.TASK_EXECUTOR_BEAN_NAME)
     public TaskExecutor myAsyncTaskExecutor() {
         ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
-        taskExecutor.setCorePoolSize(5);
+        taskExecutor.setCorePoolSize(10);
         return taskExecutor;
     }
 }

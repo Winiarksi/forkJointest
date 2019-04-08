@@ -6,7 +6,6 @@
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/uml2/types/2.0.0-v20140602-0749/types-2.0.0-v20140602-0749-javadoc.jar!/" />
     </JAVADOC>
-    <LIBRARY_FILE />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/uml2/types/2.0.0-v20140602-0749/types-2.0.0-v20140602-0749-sources.jar!/" />
     </SOURCES>

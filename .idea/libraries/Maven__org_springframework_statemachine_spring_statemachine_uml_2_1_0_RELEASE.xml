@@ -6,7 +6,6 @@
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/statemachine/spring-statemachine-uml/2.1.0.RELEASE/spring-statemachine-uml-2.1.0.RELEASE-javadoc.jar!/" />
     </JAVADOC>
-    <LIBRARY_FILE />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/springframework/statemachine/spring-statemachine-uml/2.1.0.RELEASE/spring-statemachine-uml-2.1.0.RELEASE-sources.jar!/" />
     </SOURCES>

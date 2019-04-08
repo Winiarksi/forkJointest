@@ -3,6 +3,7 @@ package com.fj.forkJointest.schedule;
 import com.fj.forkJointest.Colours;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.stereotype.Component;
 
@@ -14,7 +15,7 @@ public class StateMachineSchedule {
     @Autowired
     private StateMachine<String, String> stateMachine;
 
-//    @Scheduled(fixedRate = 3000)
+    @Scheduled(fixedRate = 2000)
     public void printCurrentState() {
 
         log.debug(
